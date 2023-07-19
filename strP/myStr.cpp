@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
     const int arrSize = 10;
-    char ch1[arrSize];
+    char ch1[arrSize];  //c++中声明数组必须指定数组长度
     char ch2[arrSize];
     cout<<"请输入" "姓名：";
 
