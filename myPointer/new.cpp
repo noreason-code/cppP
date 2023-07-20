@@ -18,10 +18,14 @@ int main(){
     // cout<<char(*pss)<<endl; //由于上面声明的pss是指向int的指针，所以这里还需要再转换一下
 
     // cout<<myList[0]<<endl;
-    char* pp = &myList[0];
-    cout<<pp<<endl; //显而易见了，字符串的存储地址和字符串在引用时等价
-    cout<<*pp<<endl;
-    cout<<(int*)pp<<endl;
+    // char* pp = &myList[0];
+    // cout<<pp<<endl; //显而易见了，字符串的存储地址和字符串在引用时等价
+    // cout<<*pp<<endl;
+    // cout<<(int*)pp<<endl;
+    char* pps = "hello";
+    cout<<pps[0]<<endl;
+    cout<<(int*)pps<<endl;
+
     return 0;
     
 }
