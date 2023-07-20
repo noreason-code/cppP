@@ -11,6 +11,12 @@ int main(){
     cout<<p<<"\n";    //c++字符串和地址之间有映射，所以字符串本身和地址代表性相同吧
     cout<<*(p+4)<<"\n"; //指定输出哪个字符
 
+    char* ps = myList;
+    cout<<*ps<<endl;
+    cout<<ps<<endl;
+    int* pss = (int*)ps;    //字符串直接用数组名字的话不是数组起始地址了而是整个数组的内容，如果想要字符串起始地址的话用这种方法
+    cout<<char(*pss)<<endl; //由于上面声明的pss是指向int的指针，所以这里还需要再转换一下
+
     // system("pause");
     return 0;
     
